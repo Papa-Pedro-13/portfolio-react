@@ -24,7 +24,7 @@ const Portfolio = () => {
   return (
     <div>
       <Headline title='Портфолио' />
-      <div className='mt-8 flex flex-col gap-5 text-grays'>
+      <div className='mt-8 flex flex-col gap-5 dark:text-grays text-zinc-900 transition'>
         <p>
           Я горжусь тем, что работаю над каждым проектом с одинаковой страстью и
           вниманием к деталям, стремясь доставить пользователю максимальное
@@ -35,8 +35,11 @@ const Portfolio = () => {
         <div className='flex gap-4 justify-end'>
           {categories.map((category) => (
             <div
-              className={`cursor-pointer text-xl font-semibold ${
-                activeStack === category && 'text-red-600'
+              key={category}
+              className={`cursor-pointer text-xl font-semibold  ${
+                activeStack === category
+                  ? 'text-red-600'
+                  : 'text-zinc-900 dark:text-white'
               }`}
               onClick={() => onClickHandle(category)}
             >
@@ -46,7 +49,10 @@ const Portfolio = () => {
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4'>
           {filteredWorks.map((work) => (
-            <WorkCard {...work} />
+            <WorkCard
+              {...work}
+              key={work.title}
+            />
           ))}
         </div>
       </div>

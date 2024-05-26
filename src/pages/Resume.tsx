@@ -4,15 +4,22 @@ const Resume = () => {
   return (
     <>
       <Headline title={'Резюме'} />
-      <div className='mt-8 flex flex-col gap-5 text-grays'>
+      <div className='mt-8 flex flex-col gap-5 dark:text-grays text-zinc-900 transition'>
         <p>
           Мой путь в мире программирования начался 4 года назад, и с тех пор я с
           увлечением погружаюсь все глубже и глубже в эту сферу.
         </p>
       </div>
-      <div className='flex gap-8 mt-8'>
+      <a
+        download={'Островский Александр.pdf'}
+        className='mt-6 block bg-mainGradient px-10 py-4 w-fit hover:text-white hover:scale-105 transition rounded-xl text-white'
+        href='../../public/Островский Александр Сергеевич.pdf'
+      >
+        Скачать резюме
+      </a>
+      <div className='flex gap-8 mt-14 flex-col md:flex-row'>
         <div className='flex gap-5 flex-col w-full'>
-          <div className='flex gap-4 items-center text-white text-3xl font-medium'>
+          <div className='flex gap-4 items-center text-zinc-700 transition dark:text-white text-3xl font-medium'>
             <svg
               width='38'
               height='23'
@@ -28,28 +35,36 @@ const Resume = () => {
             Образование
           </div>
           <div className='border-[#212425] border-solid border-[1px] rounded-xl p-5 '>
-            <div className='text-sm text-zinc-500'>сен 2023 - янв 2024</div>
-            <div className='text-lg text-white leading-6 mt-2'>
-              React-разработка
-              <span className='text-zinc-500 ml-1'>HTML Academy</span>
+            <div className='text-sm text-zinc-700 dark:text-zinc-500'>
+              сен 2023 - янв 2024
             </div>
-            <div className='text-zinc-500  text-normal mt-1'>Онлайн курс</div>
+            <div className='text-lg text-zinc-900 transition dark:text-white leading-6 mt-2'>
+              React-разработка
+              <span className='text-zinc-700 dark:text-zinc-500 ml-1'>
+                - HTML Academy
+              </span>
+            </div>
+            <div className='text-zinc-700 dark:text-zinc-500  text-normal mt-1'>
+              Онлайн курс
+            </div>
           </div>
-          <div className='border-[#212425] border-solid border-[1px] rounded-xl p-5 '>
-            <div className='text-sm text-zinc-500'>2021-2025</div>
-            <div className='text-lg text-white leading-6 mt-2'>
+          <div className='border-[#212425] border-solid border-[1px] rounded-xl p-5 transition'>
+            <div className='text-sm text-zinc-700 dark:text-zinc-500'>
+              2021-2025
+            </div>
+            <div className='text-lg text-zinc-900 transition dark:text-white leading-6 mt-2'>
               Информационная безопасность -
-              <span className='text-zinc-500 ml-1'>
+              <span className='text-zinc-700 dark:text-zinc-500 ml-1'>
                 Санкт-петербургский политехнический университет
               </span>
             </div>
-            <div className='text-zinc-500  text-normal mt-1'>
+            <div className='text-zinc-700 dark:text-zinc-500  text-normal mt-1'>
               г. Санкт-петербург
             </div>
           </div>
         </div>
         <div className='flex gap-5 flex-col w-full'>
-          <div className='flex gap-4 items-center text-white text-3xl font-medium'>
+          <div className='flex gap-4 items-center text-zinc-700 transition dark:text-white text-3xl font-medium'>
             <svg
               width='30'
               height='27'
@@ -65,78 +80,82 @@ const Resume = () => {
             Опыт работы
           </div>
           <div className='border-[#212425] border-solid border-[1px] rounded-xl p-5 '>
-            <div className='text-sm text-zinc-500'>
+            <div className='text-sm text-zinc-700 transition dark:text-zinc-500'>
               сен 2023 - настоящее время
             </div>
-            <div className='text-lg text-white leading-6 mt-2'>
+            <div className='text-lg text-zinc-900 transition dark:text-white leading-6 mt-2'>
               Верстальщик сайтов
             </div>
-            <div className='text-zinc-500  text-normal mt-1'>Фриланс</div>
+            <div className='text-zinc-700 transition dark:text-zinc-500  text-normal mt-1'>
+              Фриланс
+            </div>
           </div>
         </div>
       </div>
-      <div className='mx-[-56px] mt-10 bg-zinc-900 p-14 flex gap-8'>
-        <div className='flex flex-col gap-8 w-full'>
-          <div className=' text-white text-3xl font-medium'>
+      <div className='mx-[-56px] mt-10 bg-zinc-100 dark:bg-zinc-900 p-14 flex gap-8 flex-col md:flex-row'>
+        <div className='flex flex-col gap-8 w-full  transition'>
+          <div className=' text-zinc-800 dark:text-white text-3xl font-medium'>
             Технологический стэк
           </div>
           <div className=''>
-            <div className='flex justify-between items-center'>
+            <div className='flex justify-between items-center dark:text-white text-zinc-800'>
               React.js
               <span>70%</span>
             </div>
-            <div className='w-full rounded-md bg-black mt-2'>
+            <div className='w-full rounded-md bg-slate-300 dark:bg-black mt-2'>
               <span className=' bg-blue-800 h-1.5 rounded-md block w-[70%]'></span>
             </div>
           </div>
 
           <div className=''>
-            <div className='flex justify-between items-center'>
+            <div className='flex justify-between items-center dark:text-white text-zinc-800'>
               JavaScript
               <span>80%</span>
             </div>
-            <div className='w-full rounded-md bg-black mt-2'>
+            <div className='w-full rounded-md bg-slate-300 dark:bg-black mt-2'>
               <span className='bg-yellow-400 h-1.5 rounded-md block w-[80%]'></span>
             </div>
           </div>
           <div className=''>
-            <div className='flex justify-between items-center'>
+            <div className='flex justify-between items-center dark:text-white text-zinc-800'>
               HTML
               <span>100%</span>
             </div>
-            <div className='w-full rounded-md bg-black mt-2'>
+            <div className='w-full rounded-md bg-slate-300 dark:bg-black mt-2'>
               <span className='bg-orange-600 h-1.5 rounded-md block w-[100%]'></span>
             </div>
           </div>
           <div className=''>
-            <div className='flex justify-between items-center'>
+            <div className='flex justify-between items-center dark:text-white text-zinc-800'>
               CSS
               <span>95%</span>
             </div>
-            <div className='w-full rounded-md bg-black mt-2'>
+            <div className='w-full rounded-md bg-slate-300 dark:bg-black mt-2'>
               <span className='bg-blue-500 h-1.5 rounded-md block w-[95%]'></span>
             </div>
           </div>
         </div>
-        <div className='flex flex-col gap-8 w-full'>
-          <div className=' text-white text-3xl font-medium'>Навыки</div>
+        <div className='flex flex-col gap-8 w-full transition'>
+          <div className=' text-zinc-800 dark:text-white text-3xl font-medium'>
+            Навыки
+          </div>
           <div className='flex flex-wrap gap-4'>
-            <div className='py-1 px-4 bg-zinc-800 text-zinc-300 rounded-md'>
+            <div className='py-1 px-4 bg-slate-300 text-zinc-800 dark:bg-zinc-800 dark:text-zinc-300 rounded-md'>
               Typescript
             </div>
-            <div className='py-1 px-4 bg-zinc-800 text-zinc-300 rounded-md'>
+            <div className='py-1 px-4 bg-slate-300 text-zinc-800 dark:bg-zinc-800 dark:text-zinc-300 rounded-md'>
               Redux-toolkit
             </div>
-            <div className='py-1 px-4 bg-zinc-800 text-zinc-300 rounded-md'>
+            <div className='py-1 px-4 bg-slate-300 text-zinc-800 dark:bg-zinc-800 dark:text-zinc-300 rounded-md'>
               React
             </div>
-            <div className='py-1 px-4 bg-zinc-800 text-zinc-300 rounded-md'>
+            <div className='py-1 px-4 bg-slate-300 text-zinc-800 dark:bg-zinc-800 dark:text-zinc-300 rounded-md'>
               Vite
             </div>
-            <div className='py-1 px-4 bg-zinc-800 text-zinc-300 rounded-md'>
+            <div className='py-1 px-4 bg-slate-300 text-zinc-800 dark:bg-zinc-800 dark:text-zinc-300 rounded-md'>
               TailwindCSS
             </div>
-            <div className='py-1 px-4 bg-zinc-800 text-zinc-300 rounded-md'>
+            <div className='py-1 px-4 bg-slate-300 text-zinc-800 dark:bg-zinc-800 dark:text-zinc-300 rounded-md'>
               Rest API
             </div>
           </div>
