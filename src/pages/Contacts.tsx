@@ -92,9 +92,12 @@ const Contacts = () => {
             className='w-fit absolute top-2 left-4 transition
             peer-placeholder-shown:scale-100
             peer-placeholder-shown:translate-y-0
+            peer-placeholder-shown:text-white
             peer-focus:scale-75
             peer-focus:-translate-y-5
             peer-focus:-translate-x-1.5
+            peer-focus:text-zinc-500
+            text-zinc-500
             transform
             -translate-x-1.5
             scale-75
@@ -120,9 +123,12 @@ const Contacts = () => {
             w-fit absolute top-2 left-4 transition
             peer-placeholder-shown:scale-100
             peer-placeholder-shown:translate-y-0
+            peer-placeholder-shown:text-white
             peer-focus:scale-75
             peer-focus:-translate-y-5
             peer-focus:-translate-x-1.5
+            peer-focus:text-zinc-500
+            text-zinc-500
             transform
             -translate-x-1.5
             scale-75
@@ -148,9 +154,12 @@ const Contacts = () => {
             w-fit absolute top-2 left-4 transition
             peer-placeholder-shown:scale-100
             peer-placeholder-shown:translate-y-0
+            peer-placeholder-shown:text-white
             peer-focus:scale-75
             peer-focus:-translate-y-5
             peer-focus:-translate-x-1.5
+            peer-focus:text-zinc-500
+            text-zinc-500
             transform
             -translate-x-1.5
             scale-75
@@ -161,7 +170,7 @@ const Contacts = () => {
           </label>
         </div>
         <input
-          className='w-52 text-center border-2 border-white rounded-3xl py-3 px-10 w-fit mx-auto cursor-pointer hover:bg-white transition hover:text-zinc-700'
+          className='max-w-52 w-full text-center border-2 border-white rounded-3xl py-3 px-10  mx-auto cursor-pointer hover:bg-white transition hover:text-zinc-700'
           type='submit'
           value='Send'
         />
