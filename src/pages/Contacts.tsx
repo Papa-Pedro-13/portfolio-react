@@ -23,7 +23,7 @@ const Contacts = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm(SERVICES_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
+      .sendForm(SERVICES_ID, TEMPLATE_ID, e.currentTarget, PUBLIC_KEY)
       .then(
         () => {
           toast.success('Form was send!');
