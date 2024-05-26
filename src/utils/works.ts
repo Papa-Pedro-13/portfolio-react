@@ -1,10 +1,18 @@
-// import podpop from '../../public/podpop.png'; Tell webpack this JS file uses this image
+import sapper from '../../public/Sapper.png';
+import store from '../../public/React store.png';
+import act from '../../public/ACT.png';
+import eplix from '../../public/Eplix.png';
+import word from '../../public/5word.png';
+import transit from '../../public/My Transit.png';
+import podpop from '../../public/podpop.png';
+// import podpop from '../../public/.png';
+// import podpop from './podpop.png'; Tell webpack this JS file uses this image
 export const categories = ['All', 'React', 'Верстка'] as const;
 export const works = [
   {
     title: 'Sapper',
     subtitle: 'Игра "Сапёр" на react',
-    image: '../../public/Sapper.png',
+    image: sapper,
     category: categories[1],
     sourceCode: 'https://github.com/Papa-Pedro-13/Sapper',
     //pageUrl: 'https://papa-pedro-13.github.io/Sapper/dist/',
@@ -13,7 +21,7 @@ export const works = [
   {
     title: 'React Store',
     subtitle: 'Интернет-магазин на React с Rest API',
-    image: '../../public/React Store.png',
+    image: store,
     category: categories[1],
     sourceCode: 'https://github.com/Papa-Pedro-13/react-store',
     //pageUrl: 'https://papa-pedro-13.github.io/Sapper/dist/',
@@ -22,7 +30,7 @@ export const works = [
   {
     title: '5 Word',
     subtitle: 'Игра "5 букв" на react. Есть версия на React Native',
-    image: '../../public/5word.png',
+    image: word,
     category: categories[1],
     sourceCode: 'https://github.com/Papa-Pedro-13/5word-game',
     //pageUrl: 'https://papa-pedro-13.github.io/5word-game/dist/',
@@ -31,7 +39,7 @@ export const works = [
   {
     title: 'Podpop',
     subtitle: 'Вёрстка многостраничного интернет-магазина',
-    image: '../../public/podpop.png',
+    image: podpop,
     category: categories[2],
     sourceCode: 'https://github.com/Papa-Pedro-13/Podpop',
     pageUrl: 'https://papa-pedro-13.github.io/Podpop/dist/',
@@ -40,7 +48,7 @@ export const works = [
   {
     title: 'Eplix',
     subtitle: 'Вёрстка интернет-магазина креплений',
-    image: '../../public/Eplix.png',
+    image: eplix,
     category: categories[2],
     sourceCode: 'https://github.com/Papa-Pedro-13/Eplix',
     pageUrl: 'https://papa-pedro-13.github.io/Eplix/dist/',
@@ -49,7 +57,7 @@ export const works = [
   {
     title: 'ACT',
     subtitle: 'Многостраничный лендинг сайт фитнесс студии',
-    image: '../../public/ACT.png',
+    image: act,
     category: categories[2],
     sourceCode: 'https://github.com/Papa-Pedro-13/ACT---fitness-studio',
     pageUrl: 'https://papa-pedro-13.github.io/ACT---fitness-studio/dist/',
@@ -58,7 +66,7 @@ export const works = [
   {
     title: 'My Transit',
     subtitle: 'Лендинг-сайт компании грузоперевозок',
-    image: '../../public/My Transit.png',
+    image: transit,
     category: categories[2],
     sourceCode: 'https://github.com/Papa-Pedro-13/MyTransit',
     pageUrl: 'https://papa-pedro-13.github.io/MyTransit/dist/',
