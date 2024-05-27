@@ -49,13 +49,13 @@ const WorkCard: React.FC<Work> = ({
         Репозиторий GitHub
       </Link>
       {pageUrl && (
-        <Link
-          to={pageUrl}
+        <a
+          href={pageUrl}
           className='w-full block p-3 mt-4
         text-center border-blue-600 border-2 rounded-3xl text-blue-600 dark:text-white  hover:bg-blue-600  transition-all hover:text-white'
         >
           Перейти на сайт
-        </Link>
+        </a>
       )}
     </div>
   );
