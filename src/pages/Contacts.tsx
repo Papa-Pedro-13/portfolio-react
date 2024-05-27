@@ -26,10 +26,10 @@ const Contacts = () => {
       .sendForm(SERVICES_ID, TEMPLATE_ID, e.currentTarget, PUBLIC_KEY)
       .then(
         () => {
-          toast.success('Form was send!');
+          toast.success('Ваша заявка успешно отправлена!');
         },
         (error) => {
-          toast.success('Try later!');
+          toast.error('Попробуйте попозже!');
           console.log(error);
         }
       )

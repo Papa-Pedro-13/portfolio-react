@@ -1,4 +1,5 @@
 import Headline from '../components/Headline';
+import resumeDoc from '../../public/Островский Александр Сергеевич.pdf';
 
 const Resume = () => {
   return (
@@ -13,7 +14,7 @@ const Resume = () => {
       <a
         download={'Островский Александр.pdf'}
         className='mt-6 block bg-mainGradient px-10 py-4 w-fit hover:text-white hover:scale-105 transition rounded-xl text-white'
-        href='../../public/Островский Александр Сергеевич.pdf'
+        href={resumeDoc}
       >
         Скачать резюме
       </a>
