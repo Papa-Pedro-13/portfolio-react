@@ -130,7 +130,7 @@ const Contacts = () => {
             -translate-y-5'
             htmlFor='name'
           >
-            Name
+            Имя
           </label>
         </div>
         <div className='flex flex-col relative'>
@@ -164,7 +164,7 @@ const Contacts = () => {
             -translate-y-5'
             htmlFor='email'
           >
-            Email
+            Электронная почта
           </label>
         </div>
         <div className='flex flex-col relative'>
@@ -198,7 +198,7 @@ const Contacts = () => {
             -translate-y-5'
             htmlFor='message'
           >
-            Message
+            Сообщение
           </label>
         </div>
         <input
